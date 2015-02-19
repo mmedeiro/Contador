@@ -49,6 +49,9 @@ static Contador *_cont=nil;
     return girl;
 }
 
+-(int)getTotal{
+    return boy+girl;
+}
 
 
 @end
