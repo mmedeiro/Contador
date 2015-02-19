@@ -15,6 +15,16 @@
     int girl;
 }
 
+static Contador *_cont=nil;
+
++ (Contador *)cont {
+    
+    if (_cont==nil) {
+        _cont = [[Contador alloc]init];
+    }
+    return _cont;
+}
+
 -(id)init {
     self = [super init];
     if (self) {

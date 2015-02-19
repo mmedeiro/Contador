@@ -8,7 +8,11 @@
 // Mariana Medeiro
 //
 
-@interface Contador : NSObject 
+@interface Contador : NSObject
+
+{}
+
++ (Contador *) cont;
 
 - (void)maisUmCueca;
 - (void)maisUmaGata;
