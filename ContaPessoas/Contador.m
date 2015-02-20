@@ -15,6 +15,8 @@
     int girl;
 }
 
+@synthesize cd;
+
 static Contador *_cont=nil;
 
 + (Contador *)cont {
@@ -36,9 +38,11 @@ static Contador *_cont=nil;
 
 - (void)maisUmCueca {
     boy = boy + 1;
+    [cd atualizaValores];
 }
 - (void)maisUmaGata {
     girl++;
+    [cd atualizaValores];
 }
 
 -(int)getBoys {

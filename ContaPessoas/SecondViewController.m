@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     contador = [Contador cont];
+    contador.cd = self;
+    [self atualizaValores];
 }
 
 
@@ -35,5 +37,14 @@
     _total.text = [NSString stringWithFormat:@"%d", [contador getTotal]];
 }
 
+-(void)atualizaValores
+{
+    _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
+    _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
+    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal]];
+
+
+    
+}
 
 @end

@@ -8,9 +8,10 @@
 // Mariana Medeiro
 //
 
+#import "Mostrador.h"
 @interface Contador : NSObject
 
-{}
+@property id <Mostrador> cd; //cd=nome da variavel
 
 + (Contador *) cont;
 
